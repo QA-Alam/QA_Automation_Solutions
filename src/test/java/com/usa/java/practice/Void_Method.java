@@ -19,6 +19,7 @@ public class Void_Method {
 		System.out.println("This my total salary per year : " + total);
 
 	}
+	
 
 	// How you call non-static method inside another methods?
 	// By creating obj
@@ -30,6 +31,7 @@ public class Void_Method {
 	public static void main(String[] args) {
 		Void_Method obj = new Void_Method();
 		obj.getEmployeesInfo();
+		
 	}
 
 }
