@@ -1,7 +1,7 @@
 package com.usa.java.practice;
 
 public class Global_Variable {
-
+     
 	static int income;
 	static String firstName;
 	static String information;
