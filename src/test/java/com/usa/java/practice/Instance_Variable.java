@@ -10,8 +10,8 @@ public class Instance_Variable { // This is a class
 	// class and any method
 	// static method cannot handle the instance variable or non static variable
 
-	// data type, declaration initialization
-	        int              num         = 8000;
+	// data type, declaration initialization   
+	 final  int              num         = 8000;
 
 	int salary;
 	String name;
@@ -48,6 +48,9 @@ public class Instance_Variable { // This is a class
 	// Ans: ClassName objectName = new ClassName();
 
 	public static void main(String[] args) {
+		
+		
+		// object another name is instantiation
 		Instance_Variable obj = new Instance_Variable(); // Object
 		obj.getName();
 		obj.getSalary();
