@@ -43,49 +43,22 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.6.0</version>
+				<version>3.7.0</version>
 				<configuration>
 					<source>11</source>
 					<target>11</target>
 					<encoding>UTF-8</encoding>
-					<fork>true</fork>
-					<executable>C:\Program Files\Java\jdk-11.0.11\bin\javac</executable>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<dependencies>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.25</version>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.7.25</version>
-		</dependency>
-		<dependency>
 			<groupId>com.microsoft.sqlserver</groupId>
 			<artifactId>mssql-jdbc</artifactId>
 			<version>7.2.2.jre8</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.0.0-alpha-3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-chrome-driver</artifactId>
-			<version>3.11.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-server</artifactId>
-			<version>3.11.0</version>
 		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
@@ -94,10 +67,9 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
-			<scope>test</scope>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
@@ -136,13 +108,8 @@
 		</dependency>
 		<dependency>
 			<groupId>net.masterthought</groupId>
-			<artifactId>maven-cucumber-reporting</artifactId>
-			<version>3.14.0</version>
-		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-core</artifactId>
-			<version>1.2.5</version>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.6.1</version>
 		</dependency>
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
@@ -159,16 +126,6 @@
 			<artifactId>maven-jar-plugin</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-		<!-- 		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.5</version>
-		</dependency>
-		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>cucumber-java</artifactId>
-			<version>1.2.5</version>
-		</dependency> -->
 		<dependency>
 			<groupId>com.github.scribejava</groupId>
 			<artifactId>scribejava-apis</artifactId>
@@ -227,8 +184,38 @@
 		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>6.10.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>6.10.4</version>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>6.11.0</version>
+			<version>6.10.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-jvm</artifactId>
+			<version>6.10.4</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>6.10.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>6.10.4</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.guava</groupId>
@@ -236,15 +223,11 @@
 			<version>27.0.1-jre</version>
 		</dependency>
 		<dependency>
-			<groupId>io.cucumber</groupId>
-			<artifactId>cucumber-testng</artifactId>
-			<version>6.11.0</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.juneau</groupId>
 			<artifactId>juneau-marshall</artifactId>
 			<version>8.2.0</version>
 		</dependency>
+		
 	</dependencies>
 </project>
 

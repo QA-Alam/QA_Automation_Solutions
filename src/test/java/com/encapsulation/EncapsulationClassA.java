@@ -18,6 +18,9 @@ package com.encapsulation;
 // Can you create a class as private 
 // Ans: No it not possible 
 // But i can create Variable & method as well 
+// However i can create instated of private (final class)
+// Which class cannot override, cannot change and it's final 
+
 public class EncapsulationClassA {
 // First condition -> (declare  the variable with private access modifier)
 	private String job = "QA Automation Engineer";
@@ -38,7 +41,7 @@ public class EncapsulationClassA {
 	}
 
 // 3rd condition 
-// Complete within the class
+// finish within the class
 
 	public static void main(String[] args) {
 		EncapsulationClassA obj = new EncapsulationClassA();

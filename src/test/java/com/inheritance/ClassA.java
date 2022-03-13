@@ -9,6 +9,6 @@ public interface ClassA {
 
 	// How you identify the Abstract method?
 	// Method is closing by semicolon and there are no curly bracket open & closed
-
+     //public void getSalary2() {  }
 
 }

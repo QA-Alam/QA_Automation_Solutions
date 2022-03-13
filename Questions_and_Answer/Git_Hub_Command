@@ -7,7 +7,7 @@
 6, git config --global user.email ""
 7, git commit -m "first round commit..."
 8, clear
-9, git push -u origin master --> open new popup window for user name & password
+9, git push -u origin master --> open new pop-up window for user name & password
 
      How to pull project new class
 1,  git pull origin master

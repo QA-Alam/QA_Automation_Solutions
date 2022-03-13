@@ -10,12 +10,19 @@ public class Number_Swap {
 		int y = 200; // y value is 200 but we need to be swap as 100
 		// ----------------------------------------------------------------//
 		temp = x; // temp value is 100
+		
+		//System.out.println("After swaping Temp value is a : "+temp);		
 		x = y; // x value is 200
+		
+		System.out.println("After swaping X value is a : "+x);
+		
+		
 		y = temp; // y value is 100
 
+		System.out.println("After swaping Y value is a : "+y );
 		// verify the swap values
-		System.out.println("x =  " + x);
-		System.out.println("y =  " + y);
+		//System.out.println("x =  " + x);
+		//System.out.println("y =  " + y);
 	}
 
 	// How to swap the number without third variable
@@ -33,6 +40,7 @@ public class Number_Swap {
 	}
 
 	public static void main(String[] args) {
+		Number_Swap.swapTheNumbersUsingThirdVariable();
 		Number_Swap.swapTheNumbersUsingWithOutThirdVariable();
 	}
 }

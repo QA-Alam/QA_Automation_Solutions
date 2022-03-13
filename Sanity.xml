@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Automation Test Suite">
-<listeners>
-		<listener class-name="com.listener.TestListener" />
-</listeners>
-	<test name="Zoopla Login test">
-		<classes>
-			<class name="com.myrunner.CucumberRunner" />
-		</classes>
-	</test>
-</suite>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <classes>
+      <class name="com.usa.my.runner.MyRunner"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
