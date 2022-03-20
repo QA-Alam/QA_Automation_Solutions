@@ -1,23 +1,18 @@
 package com.usa.my.runner;
 
-import org.testng.annotations.DataProvider;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
+import cucumber.api.CucumberOptions;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(
-		plugin= {"pretty","json:target/cucumber.json" },			
-		features = {".//Features/"}, 
-        glue = "",// {"com.stepdefinations","com.hooks"}, 	
-		//dryRun = false, 
-		//monochrome = true, 
-		//strict = false,
-		tags = "@Smoke")   
+
+
+//CucumberOptions is help us to connect features folder, step definitions class, generate report
+// Specify the test cases and many more 
+@CucumberOptions(   		
+      features = {".//Features/"},    //  features = location of features folder
+      glue = {"com.usa.stepdefinations"},  //  glue = step definitions class location 
+       tags = {"@Smoke"}
+       )
 
 public class MyRunner extends AbstractTestNGCucumberTests {
-	
-	  @DataProvider(parallel = true)
-	    @Override
-	    public Object[][] scenarios() {
-	        return super.scenarios();
-	    }
+
 }

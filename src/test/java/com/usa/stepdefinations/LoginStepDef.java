@@ -1,5 +1,5 @@
 package com.usa.stepdefinations;
 
-public class StepDefenition {
+public class LoginStepDef {
 
 }

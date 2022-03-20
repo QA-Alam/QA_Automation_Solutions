@@ -3,25 +3,24 @@ package com.usa.selenium.challenges;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumLoginTest {
 
-	static WebDriver driver;
+//static WebDriver driver;
 
 	public static void main(String[] args) {
 		// Help with system.setProperty i have to add the location of the class
-		// System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		// Instantiating driver object and launching browser
-		// driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		// driver is object of class, like chrome, firefox, safari, Internet explore,
 		// opera etc..,
 
 		// This is for fire fox driver
-		System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
-		driver = new FirefoxDriver();
+		// System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+		// WebDriver driver = new FirefoxDriver();
 
-		// I can open a web-side help with driver . get method
+		// I can open a web-side help with driver . get()method
 		driver.get("https://www.zoopla.co.uk/");
 
 		// How to maximize the browser
