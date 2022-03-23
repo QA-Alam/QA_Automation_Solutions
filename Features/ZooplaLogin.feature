@@ -1,4 +1,4 @@
-Feature: User able use zoopla application, login the application, searching the property, buy the property 
+Feature: User able to use zoopla application, login the application, searching the property, buy the property 
 
 Scenario:  User able to login the application & verfy the users information  
 
@@ -24,7 +24,7 @@ Then User able to see the properties on the grid
 
 
 
-Scenario:  User able to search the properties 
+Scenario:  User able to buy the properties 
 
 Given User able to open a any browser 
 And User able to enter url 

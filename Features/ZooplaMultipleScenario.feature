@@ -21,7 +21,7 @@ Then User able to see the properties on the grid
 
 
 
-Scenario:  User able to search the properties 
+Scenario:  User able to buy the properties 
 And User able to click on the for sale button 
 And User able to type in search box location of the properties 
 And user able to click on search buttion 

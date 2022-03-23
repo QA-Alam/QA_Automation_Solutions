@@ -2,7 +2,7 @@
 <suite name="Test">
    <test name="Tutorialspoint" >
       <classes>
-         <class name="com.usa.my.runner.RunCucumberTest"/>
+         <class name="com.usa.my.runner.MyRunner"/>
       </classes>
    </test>
 </suite>
