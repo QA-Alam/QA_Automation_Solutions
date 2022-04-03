@@ -14,7 +14,7 @@ public class RemoveDuplicates {
 
 	// How to find out duplicate value from a strings
 
-	// @Test
+	@Test
 	public void getFindOutDuplicateFromStrings() {
 
 		// I declare a string arrays to added to multiple value in a single objects
@@ -87,7 +87,7 @@ public class RemoveDuplicates {
 	}
 
 // How to find out the second highest number from array 
-	// @Test
+	@Test
 	public void getSecondHighestNumber() {
 		// How to declare a array?
 		int num[] = { 10, 100, 40, 70, 50, 60, 30, 80, 20 };
@@ -107,7 +107,7 @@ public class RemoveDuplicates {
 	}
 
 	// How to convert int to string & String to int?
-	// @Test
+	@Test
 	public void getConvertDataType() {
 		int num = 1234;
 		String convertString = new Integer(num).toString();
@@ -118,7 +118,7 @@ public class RemoveDuplicates {
 		System.out.println("convert String to int :  " + convertInt);
 	}
 
-	// @Test
+	@Test
 	// How to brake the sentence or words
 	public void getBreakWords() {
 		String name = "United State of America";
@@ -142,7 +142,7 @@ public class RemoveDuplicates {
 
 	}
 
-	// @Test
+	@Test
 	// 99.99% common
 	// How to reveres a string without inbuilt method of predefine method
 	public void getReveresString() {
@@ -191,6 +191,9 @@ public class RemoveDuplicates {
 		// Object to Object is true if we are using equal method
 		String name4 = new String("Alam");
 		System.out.println("Object to Object is true, if maching the data from string : " + (name3.equals(name4))); // true
+
+		// Object to Object is false if we are using == sign
+		System.out.println("Object to Object is false, if maching the data from string : " + (name3 == name4)); // false
 	}
 
 }
