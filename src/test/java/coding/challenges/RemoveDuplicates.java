@@ -14,7 +14,7 @@ public class RemoveDuplicates {
 
 	// How to find out duplicate value from a strings
 
-	@Test
+	// @Test
 	public void getFindOutDuplicateFromStrings() {
 
 		// I declare a string arrays to added to multiple value in a single objects
@@ -86,8 +86,8 @@ public class RemoveDuplicates {
 		System.out.println("My min number is  : " + min);
 	}
 
-// How to find out the second highest number from array 
-	@Test
+   // How to find out the second highest number from array 
+	// @Test
 	public void getSecondHighestNumber() {
 		// How to declare a array?
 		int num[] = { 10, 100, 40, 70, 50, 60, 30, 80, 20 };
@@ -107,7 +107,8 @@ public class RemoveDuplicates {
 	}
 
 	// How to convert int to string & String to int?
-	@Test
+	// @Test
+	@SuppressWarnings("deprecation")
 	public void getConvertDataType() {
 		int num = 1234;
 		String convertString = new Integer(num).toString();
@@ -118,7 +119,7 @@ public class RemoveDuplicates {
 		System.out.println("convert String to int :  " + convertInt);
 	}
 
-	@Test
+	// @Test
 	// How to brake the sentence or words
 	public void getBreakWords() {
 		String name = "United State of America";
@@ -142,7 +143,7 @@ public class RemoveDuplicates {
 
 	}
 
-	@Test
+	// @Test
 	// 99.99% common
 	// How to reveres a string without inbuilt method of predefine method
 	public void getReveresString() {
@@ -150,7 +151,7 @@ public class RemoveDuplicates {
 		// I have to declare a value with string variable
 		String text = "sysofnI"; // Infosys
 
-		// Then i have t0 declare a char array, because char can handle characters
+		// Then i have to declare a char array, because char can handle characters
 		char[] rev = text.toCharArray();
 
 		// After declare a char array i have to use a loop, inside the loop i can
@@ -162,12 +163,18 @@ public class RemoveDuplicates {
 			System.out.print(rev[i]);
 
 		}
+	}
 
+	@Test
+	public void getRev() {
+		StringBuffer obj = new StringBuffer("sysofnI");
+		obj.reverse();
+		System.out.println(obj);
 	}
 
 	// How to compare the two data/string
 	// What is deference between == and equal method
-	@Test
+	// @Test
 	public void getCompareData() {
 		// Variable
 		String name1 = "Alam"; // Expected data

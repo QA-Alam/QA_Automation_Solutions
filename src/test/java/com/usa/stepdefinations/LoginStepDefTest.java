@@ -1,22 +1,19 @@
 package com.usa.stepdefinations;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
+import com.usa.api.baseclass.Base_Class;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import zoopla.uk.elements.page.LoginPage;
 
-public class LoginStepDef {
-	WebDriver driver;
+public class LoginStepDefTest extends Base_Class{
+	LoginPage lp;
 
 	@Given("^User able to open a any browser$")
 	public void user_able_to_open_a_any_browser() {
-		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		Base_Class.setUp();	
+		lp = new LoginPage();
+		
 	}
 
 	@Given("^User able to enter \"([^\"]*)\" url$")
@@ -27,20 +24,26 @@ public class LoginStepDef {
 
 	@When("^User able to click on sign-in button$")
 	public void user_able_to_click_on_sign_in_button() {
-		driver.findElement(By.xpath("(//a[@data-testid='header-profile-sign-in'])[1]")).click();
+		lp.getClickOnSignBTN().click();
+		
 
 	}
 
 	@When("^User able to enter valid userName \"([^\"]*)\" & password \"([^\"]*)\"$")
 	public void user_able_to_enter_valid_userName_password(String userName, String pwd) {
-		driver.findElement(By.id("input-email-address")).sendKeys(userName);
-		driver.findElement(By.id("input-password")).sendKeys(pwd);
+		
+		lp.getenterUserName().sendKeys(userName);
+		lp.getEnterPassWord().sendKeys(pwd);
+		//driver.findElement(By.id("input-email-address")).sendKeys(userName);
+		//driver.findElement(By.id("input-password")).sendKeys(pwd);
 
 	}
 
 	@When("^User able to click on login button$")
 	public void user_able_to_click_on_login_button() {
-		driver.findElement(By.xpath("//button[text()='Sign in']")).click();
+	//	driver.findElement(By.xpath("//button[text()='Sign in']")).click();
+		lp.getSignIn().click();  // If i use click method then i have to  use the locator
+		//lp.getEnterPassWord().submit(); // If i use submit method then i don't have to use the locator
 
 	}
 
