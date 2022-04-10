@@ -12,7 +12,7 @@ public class LoginPage extends Base_Class {
 
 	// Initializing the page object:
 	public LoginPage() {
-		PageFactory.initElements(driver, this);
+	PageFactory.initElements(driver, this);
 
 	}
 
@@ -21,7 +21,7 @@ public class LoginPage extends Base_Class {
 	@FindBy(xpath = "(//a[@data-testid='header-profile-sign-in'])[1]") // I have to store the web-element by using find-by annotation
 	@CacheLookup // CacheLookup annotation help to execute the test more faster way
 				           	// Because of CacheLookup find-out the computer cash memory
-	  private WebElement clickOnSignBTN;
+	private WebElement clickOnSignBTN;
 
 	public WebElement getClickOnSignBTN() {
 		return clickOnSignBTN;
