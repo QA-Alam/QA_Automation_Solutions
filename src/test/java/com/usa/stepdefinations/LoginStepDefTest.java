@@ -1,5 +1,7 @@
 package com.usa.stepdefinations;
 
+
+
 import com.usa.api.baseclass.Base_Class;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -7,11 +9,12 @@ import cucumber.api.java.en.When;
 import zoopla.uk.elements.page.LoginPage;
 
 public class LoginStepDefTest extends Base_Class{
+
 	LoginPage lp;
 
 	@Given("^User able to open a any browser$")
 	public void user_able_to_open_a_any_browser() {
-		Base_Class.setUp();	
+		//Base_Class.setUp();	
 		lp = new LoginPage();
 		
 	}

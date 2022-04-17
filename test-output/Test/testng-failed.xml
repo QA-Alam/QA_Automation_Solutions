@@ -5,7 +5,7 @@
     <classes>
       <class name="com.usa.my.runner.MyRunner">
         <methods>
-          <include name="feature"/>
+          <include name="feature" invocation-numbers="0"/>
           <include name="setUpClass"/>
           <include name="tearDownClass"/>
         </methods>
