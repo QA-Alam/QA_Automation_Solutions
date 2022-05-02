@@ -19,7 +19,7 @@ public class Hooks extends Base_Class {
 
 	}
 
-	//@After
+	@After
 	public void tearDown(Scenario scenario) {
 		driver.quit();
 		System.out.println("...........END AUTOMATION.............");

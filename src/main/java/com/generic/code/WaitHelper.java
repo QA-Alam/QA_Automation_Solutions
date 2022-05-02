@@ -14,5 +14,7 @@ public class WaitHelper extends Base_Class{
 		wait.until(ExpectedConditions.elementToBeClickable(elem));
 		
 	}
+	
+
 
 }
