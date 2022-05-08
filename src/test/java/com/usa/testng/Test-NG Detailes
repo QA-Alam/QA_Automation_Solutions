@@ -1,0 +1,51 @@
+Which Unit testing framework you are working in your current project?
+What is the testNG?
+Do you know any Unit testing framework?
+Ans: There are many unit testing frameworks,
+	J-Unit 
+	TestNG
+	N-Unit etc., 
+So, my current I am using test-NG as unit testing framework
+	As we know selenium cannot generate the reports  
+To Overcome the situation -> I need the any Third party (API) in my current project I am using TestNG to generated the report 
+	I can do help of testNG parallel testing 
+	I can do help of testNG Cross browser testing 
+	I can pass the data on application by help of testNG 
+	I can understand the test case status by help of testNG (ITestListener) interface   
+! There is many basic annotation and advance annotations 
+    Basic annotation is below 
+•	BeforeSuite 
+•	BeforeTest
+•	BeforeClass
+•	BeforeMethod
+•	Test 
+•	AfterMethod
+•	AfterClass
+•	AfterTest
+•	AfterSuite
+
+Q. If you have a 10 test cases on your one class but you want to execute number 8 test case as first how you can do it?
+Ans: By test-NG (priority = number)
+Q. If you have a 10 test cases on your one class but you want to execute one after anther or if run your first test cases then you can run other test cases otherwise not?
+Ans: by test-NG @Test (dependsOnMethods = {"getAddress"})
+
+
+Q.  If you have a 10 test cases on your one class but you want to execute only one testcases then how you do it?
+Ans: @Test (enabled= true)
+Q. You have one testcase! Same test you to execute 10/20/100 times, how you can do it 
+@Test (invocationCount = 100)
+
+
+
+How you take a screenshot?
+Ans: There are TakesScreenshot interface help of that I can take Screenshot
+I have a ITestListener class there is one method call “onTestFalure”, Inside that method I call the screenshot method for unities then it will take automatically screenshot if any testcases is fail 
+
+
+How you verify the testcases?
+Ans: By TestNG assertion (Expected = Actual) 
+
+
+
+ 
+ 
